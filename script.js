@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToTopBtn = document.getElementById('back-to-top');
     const menuIcon = document.getElementById('menu-icon');
     const navLinks = document.getElementById('nav-links');
+    const companyName = document.querySelector('.company-name');
+    const faqQuestions = document.querySelectorAll('.faq-question');
 
     contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const name = document.getElementById('nombre').value;
+        const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
-        const message = document.getElementById('mensaje').value;
+        const message = document.getElementById('message').value;
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
@@ -25,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             alert('Por favor, completa todos los campos.');
         }
+    });
+
+    companyName.addEventListener('click', function() {
+        document.querySelector('#inicio').scrollIntoView({ behavior: 'smooth' });
     });
 
     // Smooth scrolling para los enlaces del menú
@@ -55,21 +61,15 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
+    // Minimizar la cabecera al hacer scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('header-minimized');
-            document.getElementById('header-content').classList.add('hidden');
             backToTopBtn.style.display = 'block';
         } else {
             header.classList.remove('header-minimized');
-            document.getElementById('header-content').classList.remove('hidden');
             backToTopBtn.style.display = 'none';
         }
-    });
-
-    // Mostrar la sección de librerías al hacer clic en el botón "Explorar"
-    exploreBtn.addEventListener('click', function() {
-        document.querySelector('#librerias').scrollIntoView({ behavior: 'smooth' });
     });
 
     // Volver arriba
@@ -80,5 +80,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Toggle del menú en dispositivos móviles
     menuIcon.addEventListener('click', function() {
         navLinks.classList.toggle('active');
+    });
+
+    // FAQ desplegables
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            answer.classList.toggle('visible');
+        });
     });
 });
