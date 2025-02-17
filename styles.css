@@ -1,0 +1,448 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E0A3C;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1E0A3C, #2E1A4C);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: height 0.3s ease;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.header-content.hidden {
+    opacity: 0;
+}
+
+.header-content.visible {
+    opacity: 1;
+}
+
+.company-name {
+    color: #ffcc00;
+    font-size: 2.8em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+    font-weight: 700;
+}
+
+.header-minimized .company-name {
+    font-size: 1.5em;
+}
+
+.company-logo {
+    margin: 10px 0;
+    transition: transform 0.2s ease;
+}
+
+.company-logo:hover {
+    transform: scale(1.05);
+}
+
+h2, h3 {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+/* Estilos del menú desplegable */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+/* Estilos de la sección de bienvenida */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+.explore-btn {
+    background-color: #ffcc00;
+    color: #1E0A3C;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.explore-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.company-logo {
+    width: 300px;
+    height: auto;
+}
+
+/* Estilos de las secciones */
+section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #1E0A3C;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+section:hover {
+    border: 2px solid #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Estilos de las muestras de sonido */
+.audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 80px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.player-controls {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.song-info {
+    margin-bottom: 8px;
+}
+
+.song-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+}
+
+.artist {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #ff5500;
+    animation: progress-animation 10s linear infinite;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.play-btn,
+.pause-btn,
+.skip-btn,
+.volume-btn {
+    font-size: 18px;
+    color: #666;
+    margin-right: 12px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.play-btn:hover,
+.pause-btn:hover,
+.skip-btn:hover,
+.volume-btn:hover {
+    transform: scale(1.2);
+}
+
+.volume-slider {
+    width: 120px;
+    height: 6px;
+    background-color: #ccc;
+    position: relative;
+    margin-left: 12px;
+}
+
+.volume-slider-bar {
+    height: 100%;
+    background-color: #666;
+}
+
+.volume-slider-handle {
+    width: 18px;
+    height: 18px;
+    background-color: #666;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        display: block;
+    }
+}
+
+/* Estilos del botón "Volver Arriba" */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #1E0A3C;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #e6b800;
+}
+
+/* Estilos de la sección de contacto */
+.contact-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  ;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff6384;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #ff6384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
