@@ -10,29 +10,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<header>
-    <div class="header-content" id="header-content">
-        <h1 align="center" class="company-name">On Road Sound Libraries</h1>
-        <nav>
-            <div class="menu-icon" id="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
-                <li><a href="#equipo">Nuestro Equipo</a></li>
-                <li><a href="#librerias">Librerías</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <div id="particles-js"></div>
+    <header>
+        <div class="header-content" id="header-content">
+            <h1 class="company-name">On Road Sound Libraries</h1>
+            <nav>
+                <div class="menu-icon" id="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+                    <li><a href="#equipo">Nuestro Equipo</a></li>
+                    <li><a href="#librerias">Librerías</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <section id="inicio" class="hero-section">
-        <center>
+    <main>
+        <section id="inicio" class="hero-section">
             <div class="card">
                 <img src="logo.png" alt="Logo de On Road Sound Libraries" class="company-logo">
                 <div class="card__content">
@@ -45,143 +45,143 @@
                     </p>
                 </div>
             </div>
-        </center>
-        <h2>¡Bienvenido a On Road Sound Libraries!</h2>
-        <p class="hero-text">Explora. Descubre. Crea.</p>
-        <button class="explore-btn" onclick="document.querySelector('#librerias').scrollIntoView({ behavior: 'smooth' });">Explorar Librerías</button>
-    </section>
+            <h2>¡Bienvenido a On Road Sound Libraries!</h2>
+            <p class="hero-text">Explora. Descubre. Crea.</p>
+            <button class="explore-btn" onclick="document.querySelector('#librerias').scrollIntoView({ behavior: 'smooth' });">Explorar Librerías</button>
+        </section>
 
-    <section id="quienes-somos">
-        <h2>¿Quiénes Somos?</h2>
-        <p>En On Road Sound Libraries, somos un equipo de profesionales apasionados por el sonido, dedicados a la creación de librerías de audio de alta calidad para productores y editores de sonido en todo el mundo. Nuestra misión es ofrecer sonidos únicos y realistas que inspiren y mejoren tus proyectos. Nos especializamos en la grabación de una amplia variedad de sonidos, asegurando que cada librería que ofrecemos sea de la más alta calidad.</p>
+        <section id="quienes-somos">
+            <h2>¿Quiénes Somos?</h2>
+            <p>En On Road Sound Libraries, somos un equipo de profesionales apasionados por el sonido, dedicados a la creación de librerías de audio de alta calidad para productores y editores de sonido en todo el mundo. Nuestra misión es ofrecer sonidos únicos y realistas que inspiren y mejoren tus proyectos. Nos especializamos en la grabación de una amplia variedad de sonidos, asegurando que cada librería que ofrecemos sea de la más alta calidad.</p>
+            <div class="card">
+                <div class="card-info">
+                    <img src="imagen1.jpg" alt="Manu" class="image">
+                    <p class="title">Manu</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo">
+            <h2>Nuestro Equipo Técnico y Material</h2>
+            <p>Utilizamos equipos de alta gama para grabar y editar nuestras librerías de audio. Aquí tienes una lista de nuestro equipo:</p>
+            <div class="equipo-grid">
+                <div class="equipo-item">
+                    <img src="microfono1.jpg" alt="Micrófono 1" class="equipo-img">
+                    <p>Micrófono Neumann U87 - Un micrófono de condensador de diafragma grande, ideal para grabaciones vocales y de instrumentos.</p>
+                </div>
+                <div class="equipo-item">
+                    <img src="microfono2.jpg" alt="Micrófono 2" class="equipo-img">
+                    <p>Micrófono Sennheiser MKH 416 - Un micrófono direccional de alta calidad, perfecto para grabaciones en exteriores y cine.</p>
+                </div>
+                <div class="equipo-item">
+                    <img src="software1.jpg" alt="Software 1" class="equipo-img">
+                    <p>Software Pro Tools - Una de las plataformas de edición de audio más utilizadas en la industria, ideal para la postproducción.</p>
+                </div>
+                <div class="equipo-item">
+                    <img src="software2.jpg" alt="Software 2" class="equipo-img">
+                    <p>Software Ableton Live - Un software versátil para la creación musical y la producción de audio en tiempo real.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="librerias">
+            <h2>Librerías en Venta</h2>
+            <div class="librerias-grid">
+                <div class="libreria">
+                    <img src="libreria1.jpg" alt="Librería 1" class="libreria-img">
+                    <h3>Librería 1</h3>
+                    <p>Descripción de la librería 1.</p>
+                    <audio controls>
+                        <source src="sonido1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="libreria">
+                    <img src="libreria2.jpg" alt="Librería 2" class="libreria-img">
+                    <h3>Librería 2</h3>
+                    <p>Descripción de la librería 2.</p>
+                    <audio controls>
+                        <source src="sonido2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="libreria">
+                    <img src="libreria3.jpg" alt="Librería 3" class="libreria-img">
+                    <h3>Librería 3</h3>
+                    <p>Descripción de la librería 3.</p>
+                    <audio controls>
+                        <source src="sonido3.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="libreria">
+                    <img src="libreria4.jpg" alt="Librería 4" class="libreria-img">
+                    <h3>Librería 4</h3>
+                    <p>Descripción de la librería 4.</p>
+                    <audio controls>
+                        <source src="sonido4.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+            <div class="pago">
+                <h3>Opciones de Pago</h3>
+                <p>Aceptamos pagos a través de PayPal y tarjetas bancarias.</p>
+                <div class="pago-interfaz">
+                    <button class="paypal-btn">Pagar con PayPal</button>
+                    <button class="card-btn">Pagar con Tarjeta</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            <div class="preguntas">
+                <div class="pregunta">
+                    <h3 class="faq-question">¿Cómo descargo las librerías? <i class="fas fa-chevron-down"></i></h3>
+                    <p class="faq-answer">Después de comprar, recibirás un enlace de descarga en tu correo electrónico.</p>
+                </div>
+                <div class="pregunta">
+                    <h3 class="faq-question">¿Qué formatos de audio ofrecemos? <i class="fas fa-chevron-down"></i></h3>
+                    <p class="faq-answer">Ofrecemos formatos WAV, MP3 y AIFF.</p>
+                </div>
+                <div class="pregunta">
+                    <h3 class="faq-question">¿Puedo usar los sonidos en proyectos comerciales? <i class="fas fa-chevron-down"></i></h3>
+                    <p class="faq-answer">Sí, todos nuestros sonidos están libres de derechos y pueden ser utilizados en proyectos comerciales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-form">
+                <span class="heading">Contacta Con Nosotros</span>
+                <form id="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" rows="6" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+		
 		<center>
-		<div class="card">
-		<div class="card-info">
-		<img src="imagen1.jpg" alt="Manu" class="image">
-		<p class="title">Manu</p>
-		</div>
-		</div>
+        <footer>
+            <p>&copy; 2025 On Road Sound Libraries. Todos los derechos reservados.</p>
+        </footer>
 		</center>
-    </section>
+    </main>
 
-    <section id="equipo">
-        <h2>Nuestro Equipo Técnico y Material</h2>
-        <p>Utilizamos equipos de alta gama para grabar y editar nuestras librerías de audio. Aquí tienes una lista de nuestro equipo:</p>
-        <div class="equipo-grid">
-            <div class="equipo-item">
-                <img src="microfono1.jpg" alt="Micrófono 1">
-                <p>Micrófono Neumann U87 - Un micrófono de condensador de diafragma grande, ideal para grabaciones vocales y de instrumentos.</p>
-            </div>
-            <div class="equipo-item">
-                <img src="microfono2.jpg" alt="Micrófono 2">
-                <p>Micrófono Sennheiser MKH 416 - Un micrófono direccional de alta calidad, perfecto para grabaciones en exteriores y cine.</p>
-            </div>
-            <div class="equipo-item">
-                <img src="software1.jpg" alt="Software 1">
-                <p>Software Pro Tools - Una de las plataformas de edición de audio más utilizadas en la industria, ideal para la postproducción.</p>
-            </div>
-            <div class="equipo-item">
-                <img src="software2.jpg" alt="Software 2">
-                <p>Software Ableton Live - Un software versátil para la creación musical y la producción de audio en tiempo real.</p>
-            </div>
-        </div>
-    </section>
+    <button id="back-to-top" title="Volver Arriba">↑</button>
 
-    <section id="librerias">
-        <h2>Librerías en Venta</h2>
-        <div class="librerias-grid">
-            <div class="libreria">
-                <img src="libreria1.jpg" alt="Librería 1">
-                <h3>Librería 1</h3>
-                <p>Descripción de la librería 1.</p>
-                <audio controls>
-                    <source src="sonido1.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="libreria">
-                <img src="libreria2.jpg" alt="Librería 2">
-                <h3>Librería 2</h3>
-                <p>Descripción de la librería 2.</p>
-                <audio controls>
-                    <source src="sonido2.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="libreria">
-                <img src="libreria3.jpg" alt="Librería 3">
-                <h3>Librería 3</h3>
-                <p>Descripción de la librería 3.</p>
-                <audio controls>
-                    <source src="sonido3.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="libreria">
-                <img src="libreria4.jpg" alt="Librería 4">
-                <h3>Librería 4</h3>
-                <p>Descripción de la librería 4.</p>
-                <audio controls>
-                    <source src="sonido4.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-                <button class="comprar">Comprar</button>
-            </div>
-        </div>
-        <div class="pago">
-            <h3>Opciones de Pago</h3>
-            <p>Aceptamos pagos a través de PayPal y tarjetas bancarias.</p>
-            <div class="pago-interfaz">
-                <button class="paypal-btn">Pagar con PayPal</button>
-                <button class="card-btn">Pagar con Tarjeta</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq">
-        <h2>Preguntas Frecuentes (FAQ)</h2>
-        <div class="preguntas">
-            <div class="pregunta">
-                <h3 class="faq-question">¿Cómo descargo las librerías? <i class="fas fa-chevron-down"></i></h3>
-                <p class="faq-answer">Después de comprar, recibirás un enlace de descarga en tu correo electrónico.</p>
-            </div>
-            <div class="pregunta">
-                <h3 class="faq-question">¿Qué formatos de audio ofrecemos? <i class="fas fa-chevron-down"></i></h3>
-                <p class="faq-answer">Ofrecemos formatos WAV, MP3 y AIFF.</p>
-            </div>
-            <div class="pregunta">
-                <h3 class="faq-question">¿Puedo usar los sonidos en proyectos comerciales? <i class="fas fa-chevron-down"></i></h3>
-                <p class="faq-answer">Sí, todos nuestros sonidos están libres de derechos y pueden ser utilizados en proyectos comerciales.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="contact-form">
-            <span class="heading">Contacta Con Nosotros</span>
-            <form id="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="message">Mensaje:</label>
-                <textarea id="message" rows="6" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p align="center">&copy; 2025 On Road Sound Libraries. Todos los derechos reservados.</p>
-    </footer>
-</main>
-
-<button id="back-to-top" title="Volver Arriba">↑</button>
-
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

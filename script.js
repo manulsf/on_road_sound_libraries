@@ -90,3 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Inicializar partículas
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
